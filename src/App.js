@@ -5,6 +5,7 @@ import SignIn from "./pages/SignIn";
 import SignUp from "./pages/SignUp";
 import ForgetPassword from "./pages/ForgetPassword";
 import Offers from "./pages/Offers";
+import Headers from "./components/Header";
 
 
 
@@ -12,6 +13,9 @@ function App() {
   return (
     <>
       <Router>
+        <Headers></Headers>
+
+
         <Routes>
           <Route path="/" element={<Home/>}/>
           <Route path="/profile" element={<Profile/>}/>
@@ -20,6 +24,7 @@ function App() {
           <Route path="/forget-password" element={<ForgetPassword/>}/>
           <Route path="/offers" element={<Offers/>}/>
         </Routes>
+        
       </Router>
     </>
   );
