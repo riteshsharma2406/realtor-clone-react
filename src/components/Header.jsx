@@ -10,7 +10,7 @@ export default function Header() {
 
   function pathMathRoute(route)
   {
-    if(route==location.pathname)
+    if(route===location.pathname)
     {
       return true;
     }
